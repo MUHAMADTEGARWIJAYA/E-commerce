@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 19,
+            "activePatchIndex": 20,
             "patches": [
                 {
                     "date": 1738138486108,
@@ -84,6 +84,10 @@
                 {
                     "date": 1738145940552,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         <div>\r\n         <Sidebar />\r\n         </div>\r\n      \r\n-        <div className=\"flex-1 overflow-y-auto bg-amber-700 h-screen p-6\">\r\n+        <div className=\"flex-1 overflow-y-auto h-screen p-6\">\r\n             <Outlet />\r\n         </div>\r\n         </div>\r\n  \r\n"
+                },
+                {
+                    "date": 1738418896733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+// import React from \"react\";\r\n+// import Sidebar from \"../view/SidebarUser\";\r\n+// import NavbarUtama from \"../view/NavbarUtama\";\r\n+// import { Outlet } from \"react-router-dom\";\r\n+// const LayoutProfile: React.FC = () => {\r\n+//   return (\r\n+//     <div >\r\n+//      <NavbarUtama/>\r\n+//        <div className=\"flex\">\r\n+//         <div>\r\n+//         <Sidebar />\r\n+//         </div>\r\n+     \r\n+//         <div className=\"flex-1 overflow-y-auto h-screen p-6\">\r\n+//             <Outlet />\r\n+//         </div>\r\n+//         </div>\r\n+ \r\n+//     </div>\r\n+//   );\r\n+// };\r\n+\r\n+// export default LayoutProfile;\r\n"
                 }
             ],
             "date": 1738138486108,

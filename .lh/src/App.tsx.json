@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 20,
+            "activePatchIndex": 22,
             "patches": [
                 {
                     "date": 1737966225628,
@@ -88,6 +88,14 @@
                 {
                     "date": 1738416020095,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n       <Routes>\n \n         <Route path=\"/\" element={<HomePage/>}/>\n         <Route path=\"/login\" element={<Login/>}/>\n-        <Route path=\"/produk/:id\" element={<DetailPages />}/>\n+        <Route path=\"/detail/:id\" element={<DetailPages />}/>\n         <Route path=\"/checkout\" element={<CheckoutPage/>}/>\n \n         <Route path=\"/profile\" element={<LayoutProfile />}>\n         <Route path=\"user\" element={<UserProfile />}/>\n"
+                },
+                {
+                    "date": 1738418905987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import { useEffect } from 'react'\n-import LayoutProfile from './layout/LayoutProfile';\n-import DetailPages from './pages/DetailPages';\n-import UserProfile from './components/UserProfile';\n-import Login from './components/Login';\n-import CheckoutPage from './pages/CheckoutPages';\n+// import LayoutProfile from './layout/LayoutProfile';\n+// import DetailPages from './pages/DetailPages';\n+// import UserProfile from './components/UserProfile';\n+// import Login from './components/Login';\n+// import CheckoutPage from './pages/CheckoutPages';\n import { Route, Routes } from \"react-router-dom\";\n import HomePage from './pages/HomePage';\n \n \n"
+                },
+                {
+                    "date": 1738418926181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,16 +17,16 @@\n   return (\n       <Routes>\n \n         <Route path=\"/\" element={<HomePage/>}/>\n-        <Route path=\"/login\" element={<Login/>}/>\n+        {/* <Route path=\"/login\" element={<Login/>}/>\n         <Route path=\"/detail/:id\" element={<DetailPages />}/>\n         <Route path=\"/checkout\" element={<CheckoutPage/>}/>\n \n         <Route path=\"/profile\" element={<LayoutProfile />}>\n-        <Route path=\"user\" element={<UserProfile />}/>\n+        <Route path=\"user\" element={<UserProfile />}/> */}\n \n-        </Route>\n+        {/* </Route> */}\n \n \n       </Routes>\n   )\n"
                 }
             ],
             "date": 1737966225628,
