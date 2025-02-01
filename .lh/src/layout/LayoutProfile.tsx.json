@@ -1,0 +1,94 @@
+{
+    "sourceFile": "src/layout/LayoutProfile.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 19,
+            "patches": [
+                {
+                    "date": 1738138486108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1738138526678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,17 @@\n import React from \"react\";\r\n import Sidebar from \"../view/SidebarUser\";\r\n+import { Outlet } from \"react-router-dom\";\r\n const DetailPages: React.FC = () => {\r\n   return (\r\n     <div className=\"flex\">\r\n      \r\n- \r\n+      \r\n+        <Sidebar />\r\n      \r\n-    \r\n+        <div>\r\n+            <Outlet />\r\n+        </div>\r\n  \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1738138581713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from \"react\";\r\n import Sidebar from \"../view/SidebarUser\";\r\n import { Outlet } from \"react-router-dom\";\r\n-const DetailPages: React.FC = () => {\r\n+const LayoutProfile: React.FC = () => {\r\n   return (\r\n     <div className=\"flex\">\r\n      \r\n       \r\n@@ -15,5 +15,5 @@\n     </div>\r\n   );\r\n };\r\n \r\n-export default DetailPages;\r\n+export default LayoutProfile;\r\n"
+                },
+                {
+                    "date": 1738139321461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,13 @@\n import React from \"react\";\r\n import Sidebar from \"../view/SidebarUser\";\r\n+import NavbarUtama from \"../view/NavbarUtama\";\r\n import { Outlet } from \"react-router-dom\";\r\n const LayoutProfile: React.FC = () => {\r\n   return (\r\n     <div className=\"flex\">\r\n      \r\n-      \r\n+       <NavbarUtama/>\r\n         <Sidebar />\r\n      \r\n         <div>\r\n             <Outlet />\r\n"
+                },
+                {
+                    "date": 1738139357107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,16 +3,17 @@\n import NavbarUtama from \"../view/NavbarUtama\";\r\n import { Outlet } from \"react-router-dom\";\r\n const LayoutProfile: React.FC = () => {\r\n   return (\r\n-    <div className=\"flex\">\r\n-     \r\n-       <NavbarUtama/>\r\n+    <div >\r\n+     <NavbarUtama/>\r\n+       <div className=\"flex\">\r\n         <Sidebar />\r\n      \r\n         <div>\r\n             <Outlet />\r\n         </div>\r\n+        </div>\r\n  \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1738145284241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n      <NavbarUtama/>\r\n        <div className=\"flex\">\r\n         <Sidebar />\r\n      \r\n-        <div>\r\n+        <div className=\"flex-1 ml-64 overflow-y-auto h-screen p-6 bg-gray-100\">\r\n             <Outlet />\r\n         </div>\r\n         </div>\r\n  \r\n"
+                },
+                {
+                    "date": 1738145296234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n      <NavbarUtama/>\r\n        <div className=\"flex\">\r\n         <Sidebar />\r\n      \r\n-        <div className=\"flex-1 ml-64 overflow-y-auto h-screen p-6 bg-gray-100\">\r\n+        <div className=\"flex-1 overflow-y-auto h-screen p-6 bg-gray-100\">\r\n             <Outlet />\r\n         </div>\r\n         </div>\r\n  \r\n"
+                },
+                {
+                    "date": 1738145308906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n      <NavbarUtama/>\r\n        <div className=\"flex\">\r\n         <Sidebar />\r\n      \r\n-        <div className=\"flex-1 overflow-y-auto h-screen p-6 bg-gray-100\">\r\n+        <div className=\"flex-1 overflow-y-auto h-screen p-6\">\r\n             <Outlet />\r\n         </div>\r\n         </div>\r\n  \r\n"
+                },
+                {
+                    "date": 1738145742405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,10 @@\n      <NavbarUtama/>\r\n        <div className=\"flex\">\r\n         <Sidebar />\r\n      \r\n-        <div className=\"flex-1 overflow-y-auto h-screen p-6\">\r\n-            <Outlet />\r\n+      \r\n         </div>\r\n-        </div>\r\n  \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1738145751530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,12 @@\n      <NavbarUtama/>\r\n        <div className=\"flex\">\r\n         <Sidebar />\r\n      \r\n-      \r\n+        <div className=\"flex-1 overflow-y-auto p-6\">\r\n+            <Outlet />\r\n         </div>\r\n+        </div>\r\n  \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1738145765658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n      <NavbarUtama/>\r\n        <div className=\"flex\">\r\n         <Sidebar />\r\n      \r\n-        <div className=\"flex-1 overflow-y-auto p-6\">\r\n+        <div >\r\n             <Outlet />\r\n         </div>\r\n         </div>\r\n  \r\n"
+                },
+                {
+                    "date": 1738145796135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,12 @@\n const LayoutProfile: React.FC = () => {\r\n   return (\r\n     <div >\r\n      <NavbarUtama/>\r\n-       <div className=\"flex\">\r\n+       <div className=\"flex fixed\">\r\n         <Sidebar />\r\n      \r\n-        <div >\r\n+        <div className=\"flex-1 overflow-y-auto h-screen p-6\">\r\n             <Outlet />\r\n         </div>\r\n         </div>\r\n  \r\n"
+                },
+                {
+                    "date": 1738145802451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n const LayoutProfile: React.FC = () => {\r\n   return (\r\n     <div >\r\n      <NavbarUtama/>\r\n-       <div className=\"flex fixed\">\r\n+       <div className=\"flex\">\r\n         <Sidebar />\r\n      \r\n         <div className=\"flex-1 overflow-y-auto h-screen p-6\">\r\n             <Outlet />\r\n"
+                },
+                {
+                    "date": 1738145831073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,15 +5,13 @@\n const LayoutProfile: React.FC = () => {\r\n   return (\r\n     <div >\r\n      <NavbarUtama/>\r\n-       <div className=\"flex\">\r\n-        <Sidebar />\r\n+       <div className=\"flex bg-amber-300\">\r\n+        <Sidebar  />\r\n      \r\n-        <div className=\"flex-1 overflow-y-auto h-screen p-6\">\r\n-            <Outlet />\r\n+     \r\n         </div>\r\n-        </div>\r\n  \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1738145862301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,13 +5,15 @@\n const LayoutProfile: React.FC = () => {\r\n   return (\r\n     <div >\r\n      <NavbarUtama/>\r\n-       <div className=\"flex bg-amber-300\">\r\n-        <Sidebar  />\r\n+       <div className=\"flex\">\r\n+        <Sidebar />\r\n      \r\n-     \r\n+        <div className=\"flex-1 overflow-y-auto h-screen p-6\">\r\n+            <Outlet />\r\n         </div>\r\n+        </div>\r\n  \r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1738145887808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,12 @@\n const LayoutProfile: React.FC = () => {\r\n   return (\r\n     <div >\r\n      <NavbarUtama/>\r\n-       <div className=\"flex\">\r\n+       <div className=\"flex bg-amber-400\">\r\n         <Sidebar />\r\n      \r\n-        <div className=\"flex-1 overflow-y-auto h-screen p-6\">\r\n+        <div className=\"flex-1 overflow-y-auto bg-amber-700 h-screen p-6\">\r\n             <Outlet />\r\n         </div>\r\n         </div>\r\n  \r\n"
+                },
+                {
+                    "date": 1738145903265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n const LayoutProfile: React.FC = () => {\r\n   return (\r\n     <div >\r\n      <NavbarUtama/>\r\n-       <div className=\"flex bg-amber-400\">\r\n+       <div className=\"flex w-10 bg-amber-400\">\r\n         <Sidebar />\r\n      \r\n         <div className=\"flex-1 overflow-y-auto bg-amber-700 h-screen p-6\">\r\n             <Outlet />\r\n"
+                },
+                {
+                    "date": 1738145926413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,12 @@\n const LayoutProfile: React.FC = () => {\r\n   return (\r\n     <div >\r\n      <NavbarUtama/>\r\n-       <div className=\"flex w-10 bg-amber-400\">\r\n+       <div className=\"flex bg-amber-400\">\r\n+        <div>\r\n         <Sidebar />\r\n+        </div>\r\n      \r\n         <div className=\"flex-1 overflow-y-auto bg-amber-700 h-screen p-6\">\r\n             <Outlet />\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1738145933938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n const LayoutProfile: React.FC = () => {\r\n   return (\r\n     <div >\r\n      <NavbarUtama/>\r\n-       <div className=\"flex bg-amber-400\">\r\n+       <div className=\"flex\">\r\n         <div>\r\n         <Sidebar />\r\n         </div>\r\n      \r\n"
+                },
+                {
+                    "date": 1738145940552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         <div>\r\n         <Sidebar />\r\n         </div>\r\n      \r\n-        <div className=\"flex-1 overflow-y-auto bg-amber-700 h-screen p-6\">\r\n+        <div className=\"flex-1 overflow-y-auto h-screen p-6\">\r\n             <Outlet />\r\n         </div>\r\n         </div>\r\n  \r\n"
+                }
+            ],
+            "date": 1738138486108,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport Sidebar from \"../view/SidebarUser\";\r\nconst DetailPages: React.FC = () => {\r\n  return (\r\n    <div className=\"flex\">\r\n     \r\n \r\n     \r\n    \r\n \r\n    </div>\r\n  );\r\n};\r\n\r\nexport default DetailPages;\r\n"
+        }
+    ]
+}

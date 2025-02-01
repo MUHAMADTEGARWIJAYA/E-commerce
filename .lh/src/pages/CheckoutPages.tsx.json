@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/pages/CheckoutPages.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1738149947637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1738149959567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from \"react\";\r\n import CheckoutProduk from \"../components/CheckoutProduk\";\r\n import NavbarUtama from \"../view/NavbarUtama\";\r\n \r\n-const DetailPages: React.FC = () => {\r\n+const ChecoutPage: React.FC = () => {\r\n   return (\r\n     <div>\r\n      \r\n       <NavbarUtama />\r\n@@ -14,5 +14,5 @@\n     </div>\r\n   );\r\n };\r\n \r\n-export default DetailPages;\r\n+export default ChecoutPage;\r\n"
+                },
+                {
+                    "date": 1738149967633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from \"react\";\r\n import CheckoutProduk from \"../components/CheckoutProduk\";\r\n import NavbarUtama from \"../view/NavbarUtama\";\r\n \r\n-const ChecoutPage: React.FC = () => {\r\n+const CheckoutPage: React.FC = () => {\r\n   return (\r\n     <div>\r\n      \r\n       <NavbarUtama />\r\n@@ -14,5 +14,5 @@\n     </div>\r\n   );\r\n };\r\n \r\n-export default ChecoutPage;\r\n+export default CheckoutPage;\r\n"
+                }
+            ],
+            "date": 1738149947637,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport CheckoutProduk from \"../components/CheckoutProduk\";\r\nimport NavbarUtama from \"../view/NavbarUtama\";\r\n\r\nconst DetailPages: React.FC = () => {\r\n  return (\r\n    <div>\r\n     \r\n      <NavbarUtama />\r\n      {/* Main Content */}\r\n      <CheckoutProduk />\r\n    \r\n \r\n    </div>\r\n  );\r\n};\r\n\r\nexport default DetailPages;\r\n"
+        }
+    ]
+}

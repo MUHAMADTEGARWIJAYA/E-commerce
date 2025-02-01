@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/pages/DetailPages.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1738078978277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1738078997278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from \"react\";\r\n import ProductDetail from \"../components/DetailProduk\";\r\n import NavbarUtama from \"../view/NavbarUtama\";\r\n \r\n-const HomePage: React.FC = () => {\r\n+const DetailPages: React.FC = () => {\r\n   return (\r\n     <div>\r\n      \r\n       <NavbarUtama />\r\n@@ -14,5 +14,5 @@\n     </div>\r\n   );\r\n };\r\n \r\n-export default HomePage;\r\n+export default DetailPages;\r\n"
+                }
+            ],
+            "date": 1738078978277,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport ProductDetail from \"../components/DetailProduk\";\r\nimport NavbarUtama from \"../view/NavbarUtama\";\r\n\r\nconst HomePage: React.FC = () => {\r\n  return (\r\n    <div>\r\n     \r\n      <NavbarUtama />\r\n      {/* Main Content */}\r\n      <ProductDetail />\r\n    \r\n \r\n    </div>\r\n  );\r\n};\r\n\r\nexport default HomePage;\r\n"
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "sourceFile": "src/App.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 20,
+            "patches": [
+                {
+                    "date": 1737966225628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1737966300557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n       <div className=\"card\">\n         <button onClick={() => setCount((count) => count + 1)}>\n           count is {count}\n         </button>\n+        <button onClick={()=> setCount ((0))}> reset</button>\n         <p>\n           Edit <code>src/App.tsx</code> and save to test HMR\n         </p>\n       </div>\n"
+                },
+                {
+                    "date": 1737966327272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,11 @@\n       <div className=\"card\">\n         <button onClick={() => setCount((count) => count + 1)}>\n           count is {count}\n         </button>\n+        <button onClick={() => setCount((count) => count - 1)}>\n+          count is {count}\n+        </button>\n         <button onClick={()=> setCount ((0))}> reset</button>\n         <p>\n           Edit <code>src/App.tsx</code> and save to test HMR\n         </p>\n"
+                },
+                {
+                    "date": 1737966346251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,11 +20,9 @@\n       <div className=\"card\">\n         <button onClick={() => setCount((count) => count + 1)}>\n           count is {count}\n         </button>\n-        <button onClick={() => setCount((count) => count - 1)}>\n-          count is {count}\n-        </button>\n+        \n         <button onClick={()=> setCount ((0))}> reset</button>\n         <p>\n           Edit <code>src/App.tsx</code> and save to test HMR\n         </p>\n"
+                },
+                {
+                    "date": 1737966374320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import './App.css'\n \n function App() {\n   const [count, setCount] = useState(0)\n-  \n+  console.log(count)\n   return (\n     <>\n       <div>\n         <a href=\"https://vite.dev\" target=\"_blank\">\n"
+                },
+                {
+                    "date": 1737966397084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import './App.css'\n \n function App() {\n   const [count, setCount] = useState(0)\n-  console.log(count)\n+  \n   return (\n     <>\n       <div>\n         <a href=\"https://vite.dev\" target=\"_blank\">\n"
+                },
+                {
+                    "date": 1737972490441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,16 @@\n import { useState } from 'react'\n import reactLogo from './assets/react.svg'\n import viteLogo from '/vite.svg'\n+import { useEffect } from 'react'\n import './App.css'\n \n function App() {\n   const [count, setCount] = useState(0)\n-  \n+  useEffect(() => {\n+    window.scrollTo(0, 0); \n+  }, []);\n+\n   return (\n     <>\n       <div>\n         <a href=\"https://vite.dev\" target=\"_blank\">\n"
+                },
+                {
+                    "date": 1737972581709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,41 +1,27 @@\n-import { useState } from 'react'\n-import reactLogo from './assets/react.svg'\n-import viteLogo from '/vite.svg'\n import { useEffect } from 'react'\n import './App.css'\n+import { Route, Routes } from \"react-router-dom\";\n \n+\n+\n+\n function App() {\n-  const [count, setCount] = useState(0)\n   useEffect(() => {\n     window.scrollTo(0, 0); \n   }, []);\n \n   return (\n-    <>\n-      <div>\n-        <a href=\"https://vite.dev\" target=\"_blank\">\n-          <img src={viteLogo} className=\"logo\" alt=\"Vite logo\" />\n-        </a>\n-        <a href=\"https://react.dev\" target=\"_blank\">\n-          <img src={reactLogo} className=\"logo react\" alt=\"React logo\" />\n-        </a>\n-      </div>\n-      <h1>Vite + React</h1>\n-      <div className=\"card\">\n-        <button onClick={() => setCount((count) => count + 1)}>\n-          count is {count}\n-        </button>\n+      <Routes>\n+\n         \n-        <button onClick={()=> setCount ((0))}> reset</button>\n-        <p>\n-          Edit <code>src/App.tsx</code> and save to test HMR\n-        </p>\n-      </div>\n-      <p className=\"read-the-docs\">\n-        Click on the Vite and React logos to learn more\n-      </p>\n-    </>\n+        <Route>\n+\n+\n+        </Route>\n+\n+\n+      </Routes>\n   )\n }\n \n export default App\n"
+                },
+                {
+                    "date": 1737973036435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,23 +1,23 @@\n import { useEffect } from 'react'\n import './App.css'\n import { Route, Routes } from \"react-router-dom\";\n+import NavbarUtama from './view/NavbarUtama';\n \n \n \n-\n function App() {\n   useEffect(() => {\n     window.scrollTo(0, 0); \n   }, []);\n \n   return (\n       <Routes>\n \n-        \n+        <Route path=\"/\" element={<NavbarUtama/>}/>\n         <Route>\n+       \n \n-\n         </Route>\n \n \n       </Routes>\n"
+                },
+                {
+                    "date": 1737973955598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { useEffect } from 'react'\n-import './App.css'\n+\n import { Route, Routes } from \"react-router-dom\";\n import NavbarUtama from './view/NavbarUtama';\n \n \n"
+                },
+                {
+                    "date": 1738054636192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { useEffect } from 'react'\n \n import { Route, Routes } from \"react-router-dom\";\n-import NavbarUtama from './view/NavbarUtama';\n+import HomePage from './pages/HomePage';\n \n \n \n function App() {\n@@ -12,9 +12,9 @@\n \n   return (\n       <Routes>\n \n-        <Route path=\"/\" element={<NavbarUtama/>}/>\n+        <Route path=\"/\" element={<HomePage/>}/>\n         <Route>\n        \n \n         </Route>\n"
+                },
+                {
+                    "date": 1738076503838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,28 @@\n+import { useEffect } from 'react'\n+import ProductDetail from './pages/DetailProduk';\n+import { Route, Routes } from \"react-router-dom\";\n+import HomePage from './pages/HomePage';\n+\n+\n+\n+function App() {\n+  useEffect(() => {\n+    window.scrollTo(0, 0); \n+  }, []);\n+\n+  return (\n+      <Routes>\n+\n+        <Route path=\"/\" element={<HomePage/>}/>\n+        <Route path=\"/produk\" element={<ProductDetail />}/>\n+        <Route>\n+       \n+\n+        </Route>\n+\n+\n+      </Routes>\n+  )\n+}\n+\n+export default App\n"
+                },
+                {
+                    "date": 1738079021747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,34 +1,7 @@\n import { useEffect } from 'react'\n-import ProductDetail from './pages/DetailProduk';\n-import { Route, Routes } from \"react-router-dom\";\n-import HomePage from './pages/HomePage';\n \n-\n-\n-function App() {\n-  useEffect(() => {\n-    window.scrollTo(0, 0); \n-  }, []);\n-\n-  return (\n-      <Routes>\n-\n-        <Route path=\"/\" element={<HomePage/>}/>\n-        <Route path=\"/produk\" element={<ProductDetail />}/>\n-        <Route>\n-       \n-\n-        </Route>\n-\n-\n-      </Routes>\n-  )\n-}\n-\n-export default App\n-import { useEffect } from 'react'\n-\n+import DetailPages from './pages/DetailPages';\n import { Route, Routes } from \"react-router-dom\";\n import HomePage from './pages/HomePage';\n \n \n@@ -41,8 +14,9 @@\n   return (\n       <Routes>\n \n         <Route path=\"/\" element={<HomePage/>}/>\n+        <Route path=\"/produk\" element={<DetailPages />}/>\n         <Route>\n        \n \n         </Route>\n"
+                },
+                {
+                    "date": 1738138594761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { useEffect } from 'react'\n-\n+import LayoutProfile from './layout/LayoutProfile';\n import DetailPages from './pages/DetailPages';\n import { Route, Routes } from \"react-router-dom\";\n import HomePage from './pages/HomePage';\n \n@@ -15,9 +15,11 @@\n       <Routes>\n \n         <Route path=\"/\" element={<HomePage/>}/>\n         <Route path=\"/produk\" element={<DetailPages />}/>\n-        <Route>\n+\n+\n+        <Route path=\"/profile\" element={<LayoutProfile />}>\n        \n \n         </Route>\n \n"
+                },
+                {
+                    "date": 1738140496195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import { useEffect } from 'react'\n import LayoutProfile from './layout/LayoutProfile';\n import DetailPages from './pages/DetailPages';\n+import UserProfile from './components/UserProfile';\n import { Route, Routes } from \"react-router-dom\";\n import HomePage from './pages/HomePage';\n \n \n@@ -18,9 +19,9 @@\n         <Route path=\"/produk\" element={<DetailPages />}/>\n \n \n         <Route path=\"/profile\" element={<LayoutProfile />}>\n-       \n+        <Route path=\"user\" element={<DetailPages />}/>\n \n         </Route>\n \n \n"
+                },
+                {
+                    "date": 1738140510471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         <Route path=\"/produk\" element={<DetailPages />}/>\n \n \n         <Route path=\"/profile\" element={<LayoutProfile />}>\n-        <Route path=\"user\" element={<DetailPages />}/>\n+        <Route path=\"user\" element={<UserProfile />}/>\n \n         </Route>\n \n \n"
+                },
+                {
+                    "date": 1738148945742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import { useEffect } from 'react'\n import LayoutProfile from './layout/LayoutProfile';\n import DetailPages from './pages/DetailPages';\n import UserProfile from './components/UserProfile';\n+import CheckoutProduk from './components/CheckoutProduk';\n import { Route, Routes } from \"react-router-dom\";\n import HomePage from './pages/HomePage';\n \n \n@@ -16,10 +17,10 @@\n       <Routes>\n \n         <Route path=\"/\" element={<HomePage/>}/>\n         <Route path=\"/produk\" element={<DetailPages />}/>\n+        <Route path=\"/checkout\" element={<CheckoutProduk/>}/>\n \n-\n         <Route path=\"/profile\" element={<LayoutProfile />}>\n         <Route path=\"user\" element={<UserProfile />}/>\n \n         </Route>\n"
+                },
+                {
+                    "date": 1738149991775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n import { useEffect } from 'react'\n import LayoutProfile from './layout/LayoutProfile';\n import DetailPages from './pages/DetailPages';\n import UserProfile from './components/UserProfile';\n-import CheckoutProduk from './components/CheckoutProduk';\n+\n+import CheckoutPage from './pages/CheckoutPages';\n import { Route, Routes } from \"react-router-dom\";\n import HomePage from './pages/HomePage';\n \n \n@@ -17,9 +18,9 @@\n       <Routes>\n \n         <Route path=\"/\" element={<HomePage/>}/>\n         <Route path=\"/produk\" element={<DetailPages />}/>\n-        <Route path=\"/checkout\" element={<CheckoutProduk/>}/>\n+        <Route path=\"/checkout\" element={<CheckoutPage/>}/>\n \n         <Route path=\"/profile\" element={<LayoutProfile />}>\n         <Route path=\"user\" element={<UserProfile />}/>\n \n"
+                },
+                {
+                    "date": 1738167986702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { useEffect } from 'react'\n import LayoutProfile from './layout/LayoutProfile';\n import DetailPages from './pages/DetailPages';\n import UserProfile from './components/UserProfile';\n-\n+import Login from './components/Login';\n import CheckoutPage from './pages/CheckoutPages';\n import { Route, Routes } from \"react-router-dom\";\n import HomePage from './pages/HomePage';\n \n@@ -17,8 +17,9 @@\n   return (\n       <Routes>\n \n         <Route path=\"/\" element={<HomePage/>}/>\n+        <Route path=\"/login\" element={<Login/>}/>\n         <Route path=\"/produk\" element={<DetailPages />}/>\n         <Route path=\"/checkout\" element={<CheckoutPage/>}/>\n \n         <Route path=\"/profile\" element={<LayoutProfile />}>\n"
+                },
+                {
+                    "date": 1738415478142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n       <Routes>\n \n         <Route path=\"/\" element={<HomePage/>}/>\n         <Route path=\"/login\" element={<Login/>}/>\n-        <Route path=\"/produk\" element={<DetailPages />}/>\n+        <Route path=\"/produk/:id\" element={<DetailPages />}/>\n         <Route path=\"/checkout\" element={<CheckoutPage/>}/>\n \n         <Route path=\"/profile\" element={<LayoutProfile />}>\n         <Route path=\"user\" element={<UserProfile />}/>\n"
+                },
+                {
+                    "date": 1738416020095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n       <Routes>\n \n         <Route path=\"/\" element={<HomePage/>}/>\n         <Route path=\"/login\" element={<Login/>}/>\n-        <Route path=\"/produk/:id\" element={<DetailPages />}/>\n+        <Route path=\"/detail/:id\" element={<DetailPages />}/>\n         <Route path=\"/checkout\" element={<CheckoutPage/>}/>\n \n         <Route path=\"/profile\" element={<LayoutProfile />}>\n         <Route path=\"user\" element={<UserProfile />}/>\n"
+                }
+            ],
+            "date": 1737966225628,
+            "name": "Commit-0",
+            "content": "import { useState } from 'react'\nimport reactLogo from './assets/react.svg'\nimport viteLogo from '/vite.svg'\nimport './App.css'\n\nfunction App() {\n  const [count, setCount] = useState(0)\n  \n  return (\n    <>\n      <div>\n        <a href=\"https://vite.dev\" target=\"_blank\">\n          <img src={viteLogo} className=\"logo\" alt=\"Vite logo\" />\n        </a>\n        <a href=\"https://react.dev\" target=\"_blank\">\n          <img src={reactLogo} className=\"logo react\" alt=\"React logo\" />\n        </a>\n      </div>\n      <h1>Vite + React</h1>\n      <div className=\"card\">\n        <button onClick={() => setCount((count) => count + 1)}>\n          count is {count}\n        </button>\n        <p>\n          Edit <code>src/App.tsx</code> and save to test HMR\n        </p>\n      </div>\n      <p className=\"read-the-docs\">\n        Click on the Vite and React logos to learn more\n      </p>\n    </>\n  )\n}\n\nexport default App\n"
+        }
+    ]
+}

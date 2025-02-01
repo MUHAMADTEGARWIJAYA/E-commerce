@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/Login.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1738168023780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1738168055765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { GoogleOAuthProvider, GoogleLogin } from \"@react-oauth/google\";\r\n \r\n const Login = () => {\r\n   return (\r\n-    <GoogleOAuthProvider clientId=\"YOUR_GOOGLE_CLIENT_ID\">\r\n+    <GoogleOAuthProvider clientId=\"147763064629-ffvq67ek2obgrffjcbcebu5e4jd2h54c.apps.googleusercontent.com\">\r\n       <GoogleLogin\r\n         onSuccess={(credentialResponse) => {\r\n           console.log(\"ID Token:\", credentialResponse.credential); // ID Token\r\n         }}\r\n"
+                }
+            ],
+            "date": 1738168023780,
+            "name": "Commit-0",
+            "content": "import { GoogleOAuthProvider, GoogleLogin } from \"@react-oauth/google\";\r\n\r\nconst Login = () => {\r\n  return (\r\n    <GoogleOAuthProvider clientId=\"YOUR_GOOGLE_CLIENT_ID\">\r\n      <GoogleLogin\r\n        onSuccess={(credentialResponse) => {\r\n          console.log(\"ID Token:\", credentialResponse.credential); // ID Token\r\n        }}\r\n        onError={() => {\r\n          console.log(\"Login Failed\");\r\n        }}\r\n      />\r\n    </GoogleOAuthProvider>\r\n  );\r\n};\r\n\r\nexport default Login;\r\n"
+        }
+    ]
+}

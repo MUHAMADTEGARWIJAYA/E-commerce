@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/layout/LayoutHome.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1738054451460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1738054499911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n-\r\n+import React from \"react\";\r\n import { Outlet } from \"react-router-dom\";\r\n import NavbarUtama from \"../view/NavbarUtama\";\r\n \r\n-const Layout = () => {\r\n+const LayoutHome: React.FC = () => {\r\n   return (\r\n     <div>\r\n       {/* Sidebar */}\r\n       <NavbarUtama />\r\n@@ -14,5 +14,5 @@\n     </div>\r\n   );\r\n };\r\n \r\n-export default Layout;\r\n+export default LayoutHome;\r\n"
+                }
+            ],
+            "date": 1738054451460,
+            "name": "Commit-0",
+            "content": "\r\nimport { Outlet } from \"react-router-dom\";\r\nimport NavbarUtama from \"../view/NavbarUtama\";\r\n\r\nconst Layout = () => {\r\n  return (\r\n    <div>\r\n      {/* Sidebar */}\r\n      <NavbarUtama />\r\n      {/* Main Content */}\r\n    \r\n        <Outlet />\r\n \r\n    </div>\r\n  );\r\n};\r\n\r\nexport default Layout;\r\n"
+        }
+    ]
+}

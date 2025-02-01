@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/components/ProdukHome.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1738069913559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1738070063671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n };\r\n \r\n const ProductList: React.FC = () => {\r\n   return (\r\n-    <div className=\"p-6\">\r\n+    <div className=\"p-6 bg-amber-300\">\r\n       <h1 className=\"text-2xl font-bold mb-6\">Headphones For You!</h1>\r\n       <div className=\"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6\">\r\n         {products.map((product) => (\r\n           <ProductCard key={product.id} product={product} />\r\n"
+                },
+                {
+                    "date": 1738070083571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n       <p className=\"text-lg font-bold mt-2\">${product.price.toFixed(2)}</p>\r\n       <div className=\"flex items-center text-green-500 text-sm\">\r\n         {\"★\".repeat(product.rating)} ({product.rating * 20})\r\n       </div>\r\n-      <button className=\"mt-3 bg-green-600 text-white px-4 py-2 rounded-lg w-full hover:bg-green-700\">\r\n+      <button className=\"mt-3 bg-green-600 text-white px-4 py-2 rounded-lg w-10 hover:bg-green-700\">\r\n         Add to Cart\r\n       </button>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1738070088740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n       <p className=\"text-lg font-bold mt-2\">${product.price.toFixed(2)}</p>\r\n       <div className=\"flex items-center text-green-500 text-sm\">\r\n         {\"★\".repeat(product.rating)} ({product.rating * 20})\r\n       </div>\r\n-      <button className=\"mt-3 bg-green-600 text-white px-4 py-2 rounded-lg w-10 hover:bg-green-700\">\r\n+      <button className=\"mt-3 bg-green-600 text-white px-4 py-2 rounded-lg w-36 hover:bg-green-700\">\r\n         Add to Cart\r\n       </button>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1738070098979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n       <p className=\"text-lg font-bold mt-2\">${product.price.toFixed(2)}</p>\r\n       <div className=\"flex items-center text-green-500 text-sm\">\r\n         {\"★\".repeat(product.rating)} ({product.rating * 20})\r\n       </div>\r\n-      <button className=\"mt-3 bg-green-600 text-white px-4 py-2 rounded-lg w-32 hover:bg-green-700\">\r\n+      <button className=\"mt-3 bg-green-600 text-white px-4 py-2 rounded-lg w-28 hover:bg-green-700\">\r\n         Add to Cart\r\n       </button>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1738070977244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n   return (\r\n     <div className=\"bg-black rounded-lg shadow-md\">\r\n       <img src={product.image} alt={product.name} className=\"w-full h-56 object-contain mb-4 bg-amber-300\" />\r\n \r\n-      <div className=\"flex justify-center bg-amber-800\">\r\n+      <div className=\"flex bg-amber-800\">\r\n       <div className=\"bg-white\">\r\n       <h2 className=\"text-lg font-semibold\">{product.name}</h2>\r\n       <p className=\"text-gray-500 text-sm\">{product.description}</p>\r\n       <div className=\"flex items-center text-green-500 text-sm\">\r\n"
+                }
+            ],
+            "date": 1738069913558,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\n\r\ntype Product = {\r\n  id: number;\r\n  name: string;\r\n  price: number;\r\n  description: string;\r\n  image: string;\r\n  rating: number;\r\n};\r\n\r\nconst products: Product[] = [\r\n  {\r\n    id: 1,\r\n    name: \"Wireless Earbuds, IPX8\",\r\n    price: 89.0,\r\n    description: \"Organic Cotton, fairtrade certified\",\r\n    image: \"/images/earbuds.png\",\r\n    rating: 5,\r\n  },\r\n  {\r\n    id: 2,\r\n    name: \"AirPods Max\",\r\n    price: 559.0,\r\n    description: \"A perfect balance of high-fidelity audio\",\r\n    image: \"/images/airpods_max.png\",\r\n    rating: 5,\r\n  },\r\n  {\r\n    id: 3,\r\n    name: \"Bose BT Earphones\",\r\n    price: 289.0,\r\n    description: \"Table with air purifier, stained venner/black\",\r\n    image: \"/images/bose_bt.png\",\r\n    rating: 5,\r\n  },\r\n  {\r\n    id: 4,\r\n    name: \"VIVEFOX Headphones\",\r\n    price: 39.0,\r\n    description: \"Wired Stereo Headsets With Mic\",\r\n    image: \"/images/vivefox.png\",\r\n    rating: 5,\r\n  },\r\n];\r\n\r\nconst ProductCard: React.FC<{ product: Product }> = ({ product }) => {\r\n  return (\r\n    <div className=\"bg-white p-4 rounded-lg shadow-md\">\r\n      <img src={product.image} alt={product.name} className=\"w-full h-40 object-contain mb-4\" />\r\n      <h2 className=\"text-lg font-semibold\">{product.name}</h2>\r\n      <p className=\"text-gray-500 text-sm\">{product.description}</p>\r\n      <p className=\"text-lg font-bold mt-2\">${product.price.toFixed(2)}</p>\r\n      <div className=\"flex items-center text-green-500 text-sm\">\r\n        {\"★\".repeat(product.rating)} ({product.rating * 20})\r\n      </div>\r\n      <button className=\"mt-3 bg-green-600 text-white px-4 py-2 rounded-lg w-full hover:bg-green-700\">\r\n        Add to Cart\r\n      </button>\r\n    </div>\r\n  );\r\n};\r\n\r\nconst ProductList: React.FC = () => {\r\n  return (\r\n    <div className=\"p-6\">\r\n      <h1 className=\"text-2xl font-bold mb-6\">Headphones For You!</h1>\r\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6\">\r\n        {products.map((product) => (\r\n          <ProductCard key={product.id} product={product} />\r\n        ))}\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default ProductList;\r\n"
+        }
+    ]
+}
