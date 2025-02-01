@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 138,
+            "activePatchIndex": 139,
             "patches": [
                 {
                     "date": 1737972921914,
@@ -560,6 +560,10 @@
                 {
                     "date": 1738417761243,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React, { useState } from \"react\";\r\n-import { MdOutlineAccountCircle } from \"react-icons/md\";\r\n+\r\n import { CiSearch } from \"react-icons/ci\";\r\n-import { TiShoppingCart } from \"react-icons/ti\";\r\n+\r\n import { HiMenu } from \"react-icons/hi\"; \r\n \r\n const NavbarUtama: React.FC = () => {\r\n   const [isMenuOpen, setIsMenuOpen] = useState(false);\r\n"
+                },
+                {
+                    "date": 1738419110824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       <nav className=\"ralative w-full flex bg-white items-center justify-between px-6 py-3\">\r\n         {/* Logo Section */}\r\n        <a href=\"/\"> <div className=\"flex items-center space-x-3 object-contain\">\r\n           <img\r\n-            src=\"../../public/logo1.png\" // Ganti dengan path logo Anda\r\n+            src=\"/logo1.png\" // Ganti dengan path logo Anda\r\n             alt=\"\"\r\n             className=\"h-8 rounded-3xl w-8 \"\r\n           />\r\n           <span className=\"text-xl font-bold text-green-400\">Inovasi MG</span>\r\n"
                 }
             ],
             "date": 1737972921914,

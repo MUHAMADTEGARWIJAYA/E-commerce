@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 65,
+            "activePatchIndex": 66,
             "patches": [
                 {
                     "date": 1738054377302,
@@ -268,6 +268,10 @@
                 {
                     "date": 1738417989416,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n \r\n   return (\r\n     <div className=\"w-full h-96 flex justify-center items-center\">\r\n     <div\r\n-      className=\"xl:w-7xl w-md bg-white h-72 bg-cover bg-center flex items-center justify-start xl:px-10 transition-all duration-1000\"\r\n+      className=\"xl:w-7xl w-md bg-white xl:h-72 bg-cover bg-center flex items-center justify-start xl:px-10 transition-all duration-1000\"\r\n       style={{ backgroundImage: `url(${images[currentImage]})` }}\r\n     >\r\n       <div className=\"  p-5 \">\r\n         <h2 className=\"text-green-800 xl:text-4xl xl:w-xl w-44 font-bold\">\r\n"
+                },
+                {
+                    "date": 1738419094120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import React, { useState, useEffect } from \"react\";\r\n \r\n const images = [\r\n-  \"/public/bg3.png\", \r\n-  \"/public/bg6.png\",\r\n-  \"/public/bg7.png\",\r\n+  \"/bg3.png\", \r\n+  \"/bg6.png\",\r\n+  \"/bg7.png\",\r\n ];\r\n \r\n const PromoBanner: React.FC = () => {\r\n   const [currentImage, setCurrentImage] = useState(0);\r\n"
                 }
             ],
             "date": 1738054377302,
