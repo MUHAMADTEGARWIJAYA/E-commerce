@@ -21,7 +21,7 @@ const NavbarUtama: React.FC = () => {
             alt=""
             className="h-8 rounded-3xl w-8 "
           />
-          <span className="xl:text-xl text-[10px] font-bold text-green-400">Inovasi MG</span>
+          <span className="xl:text-xl font-bold text-green-400">Inovasi MG</span>
         </div>
         </a>
 

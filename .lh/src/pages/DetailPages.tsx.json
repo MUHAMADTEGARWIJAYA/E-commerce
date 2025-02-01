@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1738078978277,
@@ -16,6 +16,10 @@
                 {
                     "date": 1738418886038,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,18 @@\n-import React from \"react\";\r\n-import ProductDetail from \"../components/DetailProduk\";\r\n-import NavbarUtama from \"../view/NavbarUtama\";\r\n+// import React from \"react\";\r\n+// import ProductDetail from \"../components/DetailProduk\";\r\n+// import NavbarUtama from \"../view/NavbarUtama\";\r\n \r\n-const DetailPages: React.FC = () => {\r\n-  return (\r\n-    <div>\r\n+// const DetailPages: React.FC = () => {\r\n+//   return (\r\n+//     <div>\r\n      \r\n-      <NavbarUtama />\r\n-      {/* Main Content */}\r\n-      <ProductDetail />\r\n+//       <NavbarUtama />\r\n+//       {/* Main Content */}\r\n+//       <ProductDetail />\r\n     \r\n  \r\n-    </div>\r\n-  );\r\n-};\r\n+//     </div>\r\n+//   );\r\n+// };\r\n \r\n-export default DetailPages;\r\n+// export default DetailPages;\r\n"
+                },
+                {
+                    "date": 1738419867376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,18 @@\n-// import React from \"react\";\r\n-// import ProductDetail from \"../components/DetailProduk\";\r\n-// import NavbarUtama from \"../view/NavbarUtama\";\r\n+import React from \"react\";\r\n+import ProductDetail from \"../components/DetailProduk\";\r\n+import NavbarUtama from \"../view/NavbarUtama\";\r\n \r\n-// const DetailPages: React.FC = () => {\r\n-//   return (\r\n-//     <div>\r\n+const DetailPages: React.FC = () => {\r\n+  return (\r\n+    <div>\r\n      \r\n-//       <NavbarUtama />\r\n-//       {/* Main Content */}\r\n-//       <ProductDetail />\r\n+      <NavbarUtama />\r\n+      {/* Main Content */}\r\n+      <ProductDetail />\r\n     \r\n  \r\n-//     </div>\r\n-//   );\r\n-// };\r\n+    </div>\r\n+  );\r\n+};\r\n \r\n-// export default DetailPages;\r\n+export default DetailPages;\r\n"
                 }
             ],
             "date": 1738078978277,

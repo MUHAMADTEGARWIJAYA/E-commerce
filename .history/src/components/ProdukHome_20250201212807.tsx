@@ -30,7 +30,7 @@ const ProductList: React.FC = () => {
               onClick={() => navigate(`/detail/${product.id}`)}
             >
               <img src={product.image} alt={product.name} className="w-full h-56 object-cover mb-4" />
-              <div className="xl:flex w-full gap-3 h-36">
+              <div className="flex w-full gap-3 h-36">
                 <div>
                   <h2 className="text-lg font-semibold">{product.name}</h2>
                   <p className="text-gray-500 text-sm">{product.description}</p>
