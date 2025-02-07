@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/Elements/DetailProduk/RatingPrice.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1738927290467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1738927290467,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\n\r\ninterface RatingPriceProps {\r\n    rating: number;\r\n    price: number;\r\n}\r\nconst RatingPrice: React.FC <RatingPriceProps> = ({rating, price}) => {\r\n    return (\r\n        < >\r\n        <div className=\"\">\r\n        <div className=\"flex items-center mt-2\">\r\n          <span className=\"text-green-500 text-2xl\">\r\n            {\"★\".repeat(rating)}\r\n          </span>\r\n          <span className=\"ml-2 text-gray-600\">({rating})</span>\r\n        </div>\r\n        \r\n        <div className=\"w-full h-px bg-gray-600 my-4\"></div>\r\n        <p className=\"text-xl font-bold \">${price.toFixed(2)}</p>\r\n        <div className=\"w-full h-px bg-gray-600 my-4\"></div>\r\n        </div>\r\n        </>\r\n    )\r\n}\r\n\r\nexport default RatingPrice"
+        }
+    ]
+}

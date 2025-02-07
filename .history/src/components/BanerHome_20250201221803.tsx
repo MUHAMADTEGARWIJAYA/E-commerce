@@ -15,12 +15,12 @@ const PromoBanner: React.FC = () => {
     }, 5000); 
 
     return () => clearInterval(interval);
-  }, []); 
+  }, []);
 
   return (
     <div className="w-full h-96 flex justify-center items-center">
     <div
-      className="xl:w-7xl w-xl bg-white xl:h-72 h-72 bg-cover bg-center flex items-center justify-start xl:px-10 transition-all duration-1000"
+      className="xl:w-7xl w-md bg-white xl:h-72 bg-cover bg-center flex items-center justify-start xl:px-10 transition-all duration-1000"
       style={{ backgroundImage: `url(${images[currentImage]})` }}
     >
       <div className="  p-5 ">

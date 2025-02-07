@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/Elements/DetailProduk/MainImage.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1738930094925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1738930194540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,12 +3,12 @@\n     name: string;\r\n    \r\n     image: string;\r\n }\r\n-const MainImage : React.FC<Product> = ({name,image}) => {\r\n+const MainImage : React.FC<Product> = ({ name, image: mainImage }) => {\r\n return (\r\n     <div>\r\n-    <img src={image} alt={name} className=\"xl:w-full xl:h-[600px] w-[400px] object-cover mb-4\" />\r\n+    <img src={mainImage} alt={name} className=\"xl:w-full xl:h-[600px] w-[400px] object-cover mb-4\" />\r\n   </div>\r\n )\r\n \r\n }\r\n"
+                }
+            ],
+            "date": 1738930094925,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\ninterface Product {\r\n    name: string;\r\n   \r\n    image: string;\r\n}\r\nconst MainImage : React.FC<Product> = ({name,image}) => {\r\nreturn (\r\n    <div>\r\n    <img src={image} alt={name} className=\"xl:w-full xl:h-[600px] w-[400px] object-cover mb-4\" />\r\n  </div>\r\n)\r\n\r\n}\r\n\r\nexport default MainImage"
+        }
+    ]
+}

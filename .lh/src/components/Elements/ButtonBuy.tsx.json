@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/Elements/ButtonBuy.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1738924753975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1738927053929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         window.open(whatsappLink, \"_blank\");\r\n       };\r\n \r\n     return (\r\n-          <div className=\"flex gap-4 mt-4\">\r\n+          <div className=\"flex justify-center items-center gap-4 mt-4\">\r\n           <button \r\n             onClick={handleBuyNow}\r\n             className=\"bg-white text-green-700 font-bold border px-6 py-3 rounded-3xl w-96 hover:bg-green-700 border-green-600 hover:text-white\"\r\n           >\r\n"
+                }
+            ],
+            "date": 1738924753975,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\n\r\n\r\ninterface Product {\r\n    \r\n    quantity: number;\r\n    name: string;\r\n}\r\nconst ButtonBuy: React.FC<Product> = ( {  quantity, name }) => {\r\n\r\n    const handleBuyNow = () => {\r\n        const phoneNumber = \"62881082717519\"; // Ganti dengan nomor WhatsApp kamu\r\n        const message = `Halo, saya ingin membeli ${name} dengan jumlah ${quantity}.`;\r\n        const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;\r\n        window.open(whatsappLink, \"_blank\");\r\n      };\r\n\r\n    return (\r\n          <div className=\"flex gap-4 mt-4\">\r\n          <button \r\n            onClick={handleBuyNow}\r\n            className=\"bg-white text-green-700 font-bold border px-6 py-3 rounded-3xl w-96 hover:bg-green-700 border-green-600 hover:text-white\"\r\n          >\r\n            Buy Now\r\n          </button>\r\n         \r\n        </div>\r\n    );\r\n}\r\n\r\nexport default ButtonBuy"
+        }
+    ]
+}

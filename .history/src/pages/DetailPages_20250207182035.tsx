@@ -8,7 +8,7 @@ const DetailPages: React.FC = () => {
      
       <NavbarUtama />
       {/* Main Content */}
-      <ProductDetail></ProductDetail>
+      <ProductDetail />
     
  
     </div>

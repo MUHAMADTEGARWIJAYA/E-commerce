@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/Elements/DetailProduk/Desciption.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1738928469468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1738928469468,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport { useState } from \"react\";\r\n\r\ninterface DesciptionProps {\r\n    description: string\r\n}\r\nconst Desciption: React.FC<DesciptionProps> = ({description}) => {\r\n    const [isExpanded, setIsExpanded] = useState(false);\r\n\r\n    const toggleReadMore = () => {\r\n        setIsExpanded(!isExpanded);\r\n      };\r\n    \r\n    return (<div>\r\n        <p className={`text-gray-600 ${isExpanded ? \"\" : \"line-clamp-1\"}`}>\r\n          {description}\r\n        </p>\r\n        <button\r\n          onClick={toggleReadMore}\r\n          className=\"text-green-500 hover:text-green-700 focus:outline-none\"\r\n        >\r\n          {isExpanded ? \"Tutup\" : \"Baca Selengkapnya\"}\r\n        </button>\r\n        </div>\r\n    );\r\n}\r\n\r\n\r\n\r\nexport default Desciption"
+        }
+    ]
+}

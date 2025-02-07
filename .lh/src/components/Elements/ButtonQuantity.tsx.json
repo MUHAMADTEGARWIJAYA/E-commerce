@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/Elements/ButtonQuantity.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1738925197594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1738925197594,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\n\r\ninterface ButtonQuantityProps {\r\n        quantity: number;\r\n        setQuantity: React.Dispatch<React.SetStateAction<number>>;\r\n    }\r\n\r\nconst ButtonQuantity: React.FC<ButtonQuantityProps> = ({ quantity, setQuantity}) => {\r\n    return (\r\n        <div className=\"flex bg-gray-100 w-28 rounded-3xl items-center mt-2\">\r\n        <button\r\n          onClick={() => setQuantity(quantity - 1)}\r\n          disabled={quantity === 1}\r\n          className=\"px-3 py-2 font-bold text-2xl\"\r\n        >\r\n          -\r\n        </button>\r\n        <span className=\"px-4 text-green-700 font-bold text-xl\">{quantity}</span>\r\n        <button\r\n          onClick={() => setQuantity(quantity + 1)}\r\n          className=\"px-1 text-green-700 font-bold text-2xl py-2\"\r\n        >\r\n          +\r\n        </button>\r\n      </div>\r\n    );\r\n}\r\n\r\nexport default ButtonQuantity"
+        }
+    ]
+}

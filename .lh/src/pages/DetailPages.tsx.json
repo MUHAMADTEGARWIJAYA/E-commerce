@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1738078978277,
@@ -20,6 +20,14 @@
                 {
                     "date": 1738419867376,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,18 @@\n-// import React from \"react\";\r\n-// import ProductDetail from \"../components/DetailProduk\";\r\n-// import NavbarUtama from \"../view/NavbarUtama\";\r\n+import React from \"react\";\r\n+import ProductDetail from \"../components/DetailProduk\";\r\n+import NavbarUtama from \"../view/NavbarUtama\";\r\n \r\n-// const DetailPages: React.FC = () => {\r\n-//   return (\r\n-//     <div>\r\n+const DetailPages: React.FC = () => {\r\n+  return (\r\n+    <div>\r\n      \r\n-//       <NavbarUtama />\r\n-//       {/* Main Content */}\r\n-//       <ProductDetail />\r\n+      <NavbarUtama />\r\n+      {/* Main Content */}\r\n+      <ProductDetail />\r\n     \r\n  \r\n-//     </div>\r\n-//   );\r\n-// };\r\n+    </div>\r\n+  );\r\n+};\r\n \r\n-// export default DetailPages;\r\n+export default DetailPages;\r\n"
+                },
+                {
+                    "date": 1738927235074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from \"react\";\r\n-import ProductDetail from \"../components/DetailProduk\";\r\n+import ProductDetail from \"../components/Fragments/DetailProduk\";\r\n import NavbarUtama from \"../view/NavbarUtama\";\r\n \r\n const DetailPages: React.FC = () => {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1738929006978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     <div>\r\n      \r\n       <NavbarUtama />\r\n       {/* Main Content */}\r\n-      <ProductDetail />\r\n+      <ProductDetail></ProductDetail>\r\n     \r\n  \r\n     </div>\r\n   );\r\n"
                 }
             ],
             "date": 1738078978277,

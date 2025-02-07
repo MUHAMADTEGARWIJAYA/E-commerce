@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 66,
+            "activePatchIndex": 70,
             "patches": [
                 {
                     "date": 1738054377302,
@@ -272,6 +272,22 @@
                 {
                     "date": 1738419094120,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import React, { useState, useEffect } from \"react\";\r\n \r\n const images = [\r\n-  \"/public/bg3.png\", \r\n-  \"/public/bg6.png\",\r\n-  \"/public/bg7.png\",\r\n+  \"/bg3.png\", \r\n+  \"/bg6.png\",\r\n+  \"/bg7.png\",\r\n ];\r\n \r\n const PromoBanner: React.FC = () => {\r\n   const [currentImage, setCurrentImage] = useState(0);\r\n"
+                },
+                {
+                    "date": 1738423083816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n       style={{ backgroundImage: `url(${images[currentImage]})` }}\r\n     >\r\n       <div className=\"  p-5 \">\r\n         <h2 className=\"text-green-800 xl:text-4xl xl:w-xl w-44 font-bold\">\r\n-          Jasa Bikin Website Profesional🚀🚀🚀🚀\r\n+          Belanja disini dengan harga potongan 50%🚀🚀🚀🚀\r\n         </h2>\r\n         <button className=\"mt-4 px-5 py-2 bg-green-700 text-white rounded-lg shadow hover:bg-green-800\">\r\n           Buy Now\r\n         </button>\r\n"
+                },
+                {
+                    "date": 1738423318242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,14 +14,14 @@\n       setCurrentImage((prev) => (prev + 1) % images.length);\r\n     }, 5000); \r\n \r\n     return () => clearInterval(interval);\r\n-  }, []);\r\n+  }, []); \r\n \r\n   return (\r\n     <div className=\"w-full h-96 flex justify-center items-center\">\r\n     <div\r\n-      className=\"xl:w-7xl w-md bg-white xl:h-72 bg-cover bg-center flex items-center justify-start xl:px-10 transition-all duration-1000\"\r\n+      className=\"xl:w-7xl  bg-white xl:h-72 bg-cover bg-center flex items-center justify-start xl:px-10 transition-all duration-1000\"\r\n       style={{ backgroundImage: `url(${images[currentImage]})` }}\r\n     >\r\n       <div className=\"  p-5 \">\r\n         <h2 className=\"text-green-800 xl:text-4xl xl:w-xl w-44 font-bold\">\r\n"
+                },
+                {
+                    "date": 1738423331907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n \r\n   return (\r\n     <div className=\"w-full h-96 flex justify-center items-center\">\r\n     <div\r\n-      className=\"xl:w-7xl  bg-white xl:h-72 bg-cover bg-center flex items-center justify-start xl:px-10 transition-all duration-1000\"\r\n+      className=\"xl:w-7xl w-xl bg-white xl:h-72 bg-cover bg-center flex items-center justify-start xl:px-10 transition-all duration-1000\"\r\n       style={{ backgroundImage: `url(${images[currentImage]})` }}\r\n     >\r\n       <div className=\"  p-5 \">\r\n         <h2 className=\"text-green-800 xl:text-4xl xl:w-xl w-44 font-bold\">\r\n"
+                },
+                {
+                    "date": 1738423356170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n \r\n   return (\r\n     <div className=\"w-full h-96 flex justify-center items-center\">\r\n     <div\r\n-      className=\"xl:w-7xl w-xl bg-white xl:h-72 bg-cover bg-center flex items-center justify-start xl:px-10 transition-all duration-1000\"\r\n+      className=\"xl:w-7xl w-xl bg-white xl:h-72 h-72 bg-cover bg-center flex items-center justify-start xl:px-10 transition-all duration-1000\"\r\n       style={{ backgroundImage: `url(${images[currentImage]})` }}\r\n     >\r\n       <div className=\"  p-5 \">\r\n         <h2 className=\"text-green-800 xl:text-4xl xl:w-xl w-44 font-bold\">\r\n"
                 }
             ],
             "date": 1738054377302,

@@ -1,0 +1,86 @@
+{
+    "sourceFile": "src/components/Elements/RatingPrice.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 17,
+            "patches": [
+                {
+                    "date": 1738926362861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1738926563901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n     price: number;\r\n }\r\n const RatingPrice: React.FC <RatingPriceProps> = ({rating, price}) => {\r\n     return (\r\n-        <>\r\n-        <div className=\"flex items-center mt-2\">\r\n+        < >\r\n+        <div className=\"flex items-center mt-2 bg-amber-400\">\r\n           <span className=\"text-green-500 text-2xl\">\r\n             {\"★\".repeat(rating)}\r\n           </span>\r\n           <span className=\"ml-2 text-gray-600\">({rating})</span>\r\n"
+                },
+                {
+                    "date": 1738926582297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,17 +6,19 @@\n }\r\n const RatingPrice: React.FC <RatingPriceProps> = ({rating, price}) => {\r\n     return (\r\n         < >\r\n-        <div className=\"flex items-center mt-2 bg-amber-400\">\r\n+        <div>\r\n+        <div className=\"flex items-center mt-2\">\r\n           <span className=\"text-green-500 text-2xl\">\r\n             {\"★\".repeat(rating)}\r\n           </span>\r\n           <span className=\"ml-2 text-gray-600\">({rating})</span>\r\n         </div>\r\n         \r\n         <div className=\"w-full h-px bg-gray-600 my-4\"></div>\r\n         <p className=\"text-xl font-bold mt-2\">${price.toFixed(2)}</p>\r\n+        </div>\r\n         </>\r\n     )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1738926591737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n const RatingPrice: React.FC <RatingPriceProps> = ({rating, price}) => {\r\n     return (\r\n         < >\r\n-        <div>\r\n+        <div className=\"bg-amber-400\">\r\n         <div className=\"flex items-center mt-2\">\r\n           <span className=\"text-green-500 text-2xl\">\r\n             {\"★\".repeat(rating)}\r\n           </span>\r\n"
+                },
+                {
+                    "date": 1738926682974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n const RatingPrice: React.FC <RatingPriceProps> = ({rating, price}) => {\r\n     return (\r\n         < >\r\n-        <div className=\"bg-amber-400\">\r\n+        <div className=\"\">\r\n         <div className=\"flex items-center mt-2\">\r\n           <span className=\"text-green-500 text-2xl\">\r\n             {\"★\".repeat(rating)}\r\n           </span>\r\n"
+                },
+                {
+                    "date": 1738926730828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n           <span className=\"ml-2 text-gray-600\">({rating})</span>\r\n         </div>\r\n         \r\n         <div className=\"w-full h-px bg-gray-600 my-4\"></div>\r\n-        <p className=\"text-xl font-bold mt-2\">${price.toFixed(2)}</p>\r\n+        <p className=\"text-xl font-bold \">${price.toFixed(2)}</p>\r\n         </div>\r\n         </>\r\n     )\r\n }\r\n"
+                },
+                {
+                    "date": 1738926748961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n           </span>\r\n           <span className=\"ml-2 text-gray-600\">({rating})</span>\r\n         </div>\r\n         \r\n-        <div className=\"w-full h-px bg-gray-600 my-4\"></div>\r\n+        <div className=\"w-full h-px  my-4 bg-amber-400\"></div>\r\n         <p className=\"text-xl font-bold \">${price.toFixed(2)}</p>\r\n         </div>\r\n         </>\r\n     )\r\n"
+                },
+                {
+                    "date": 1738926755635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n           </span>\r\n           <span className=\"ml-2 text-gray-600\">({rating})</span>\r\n         </div>\r\n         \r\n-        <div className=\"w-full h-px  my-4 bg-amber-400\"></div>\r\n+        <div className=\"w-full h-px bg-gray-600 my-4\"></div>\r\n         <p className=\"text-xl font-bold \">${price.toFixed(2)}</p>\r\n         </div>\r\n         </>\r\n     )\r\n"
+                },
+                {
+                    "date": 1738926779715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n const RatingPrice: React.FC <RatingPriceProps> = ({rating, price}) => {\r\n     return (\r\n         < >\r\n-        <div className=\"\">\r\n+        <div className=\"gap-y-10\">\r\n         <div className=\"flex items-center mt-2\">\r\n           <span className=\"text-green-500 text-2xl\">\r\n             {\"★\".repeat(rating)}\r\n           </span>\r\n"
+                },
+                {
+                    "date": 1738926786985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n const RatingPrice: React.FC <RatingPriceProps> = ({rating, price}) => {\r\n     return (\r\n         < >\r\n-        <div className=\"gap-y-10\">\r\n+        <div className=\"bg-amber-700\">\r\n         <div className=\"flex items-center mt-2\">\r\n           <span className=\"text-green-500 text-2xl\">\r\n             {\"★\".repeat(rating)}\r\n           </span>\r\n"
+                },
+                {
+                    "date": 1738926816645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n const RatingPrice: React.FC <RatingPriceProps> = ({rating, price}) => {\r\n     return (\r\n         < >\r\n-        <div className=\"bg-amber-700\">\r\n+        <div className=\"bg-amber-700 h-96\">\r\n         <div className=\"flex items-center mt-2\">\r\n           <span className=\"text-green-500 text-2xl\">\r\n             {\"★\".repeat(rating)}\r\n           </span>\r\n"
+                },
+                {
+                    "date": 1738926826830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n const RatingPrice: React.FC <RatingPriceProps> = ({rating, price}) => {\r\n     return (\r\n         < >\r\n-        <div className=\"bg-amber-700 h-96\">\r\n+        <div className=\"bg-amber-700 h-10\">\r\n         <div className=\"flex items-center mt-2\">\r\n           <span className=\"text-green-500 text-2xl\">\r\n             {\"★\".repeat(rating)}\r\n           </span>\r\n"
+                },
+                {
+                    "date": 1738926834127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n const RatingPrice: React.FC <RatingPriceProps> = ({rating, price}) => {\r\n     return (\r\n         < >\r\n-        <div className=\"bg-amber-700 h-10\">\r\n+        <div className=\"bg-amber-700 h-48\">\r\n         <div className=\"flex items-center mt-2\">\r\n           <span className=\"text-green-500 text-2xl\">\r\n             {\"★\".repeat(rating)}\r\n           </span>\r\n"
+                },
+                {
+                    "date": 1738926842364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n const RatingPrice: React.FC <RatingPriceProps> = ({rating, price}) => {\r\n     return (\r\n         < >\r\n-        <div className=\"bg-amber-700 h-48\">\r\n+        <div className=\"bg-amber-700 h-36\">\r\n         <div className=\"flex items-center mt-2\">\r\n           <span className=\"text-green-500 text-2xl\">\r\n             {\"★\".repeat(rating)}\r\n           </span>\r\n"
+                },
+                {
+                    "date": 1738926857919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n const RatingPrice: React.FC <RatingPriceProps> = ({rating, price}) => {\r\n     return (\r\n         < >\r\n-        <div className=\"bg-amber-700 h-36\">\r\n+        <div className=\"bg-amber-700\">\r\n         <div className=\"flex items-center mt-2\">\r\n           <span className=\"text-green-500 text-2xl\">\r\n             {\"★\".repeat(rating)}\r\n           </span>\r\n"
+                },
+                {
+                    "date": 1738926870440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n const RatingPrice: React.FC <RatingPriceProps> = ({rating, price}) => {\r\n     return (\r\n         < >\r\n-        <div className=\"bg-amber-700\">\r\n+        <div className=\"\">\r\n         <div className=\"flex items-center mt-2\">\r\n           <span className=\"text-green-500 text-2xl\">\r\n             {\"★\".repeat(rating)}\r\n           </span>\r\n"
+                },
+                {
+                    "date": 1738926932128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n const RatingPrice: React.FC <RatingPriceProps> = ({rating, price}) => {\r\n     return (\r\n         < >\r\n-        <div className=\"\">\r\n+        <div className=\"bg-amber-100\">\r\n         <div className=\"flex items-center mt-2\">\r\n           <span className=\"text-green-500 text-2xl\">\r\n             {\"★\".repeat(rating)}\r\n           </span>\r\n"
+                },
+                {
+                    "date": 1738926993183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n const RatingPrice: React.FC <RatingPriceProps> = ({rating, price}) => {\r\n     return (\r\n         < >\r\n-        <div className=\"bg-amber-100\">\r\n+        <div className=\"\">\r\n         <div className=\"flex items-center mt-2\">\r\n           <span className=\"text-green-500 text-2xl\">\r\n             {\"★\".repeat(rating)}\r\n           </span>\r\n"
+                }
+            ],
+            "date": 1738926362861,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\n\r\ninterface RatingPriceProps {\r\n    rating: number;\r\n    price: number;\r\n}\r\nconst RatingPrice: React.FC <RatingPriceProps> = ({rating, price}) => {\r\n    return (\r\n        <>\r\n        <div className=\"flex items-center mt-2\">\r\n          <span className=\"text-green-500 text-2xl\">\r\n            {\"★\".repeat(rating)}\r\n          </span>\r\n          <span className=\"ml-2 text-gray-600\">({rating})</span>\r\n        </div>\r\n        \r\n        <div className=\"w-full h-px bg-gray-600 my-4\"></div>\r\n        <p className=\"text-xl font-bold mt-2\">${price.toFixed(2)}</p>\r\n        </>\r\n    )\r\n}\r\n\r\nexport default RatingPrice"
+        }
+    ]
+}

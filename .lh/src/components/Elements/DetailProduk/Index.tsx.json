@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/Elements/DetailProduk/Index.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1738928413415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1738929066899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n interface LeftDetail {\r\n name:string;\r\n description:string ;\r\n price: number;\r\n-quantity:number;\r\n+\r\n rating:number;\r\n }\r\n \r\n const LeftDetail: React.FC<LeftDetail> = ({name,description,price,rating}) => {\r\n"
+                }
+            ],
+            "date": 1738928413415,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport { useState } from \"react\";\r\nimport ButtonBuy from \"./ButtonBuy\";\r\nimport ButtonQuantity from \"./ButtonQuantity\";\r\nimport Desciption from \"./Desciption\";\r\nimport RatingPrice from \"./RatingPrice\";\r\ninterface LeftDetail {\r\nname:string;\r\ndescription:string ;\r\nprice: number;\r\nquantity:number;\r\nrating:number;\r\n}\r\n\r\nconst LeftDetail: React.FC<LeftDetail> = ({name,description,price,rating}) => {\r\n      const [quantity, setQuantity] = useState(1);\r\nreturn (\r\n    <div className=\"space-y-16 xl:w-full w-96 py-10 px-10\">\r\n    <h1 className=\"text-2xl font-bold\">{name}</h1>\r\n\r\n    {/* Description */}\r\n    <Desciption description={description}/>\r\n\r\n    {/* Rating & Price */}\r\n   <RatingPrice rating={rating} price={price}/>\r\n\r\n    {/* Pilihan Jumlah */}\r\n   <ButtonQuantity quantity={quantity} setQuantity={setQuantity}/>\r\n\r\n    {/* Tombol Aksi */}\r\n   <ButtonBuy quantity={quantity} name={name}/>\r\n  </div>\r\n)\r\n}\r\n\r\nexport default LeftDetail \r\n"
+        }
+    ]
+}

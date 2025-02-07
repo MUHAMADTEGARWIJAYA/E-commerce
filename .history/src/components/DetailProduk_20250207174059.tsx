@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { products, Product } from "../data/products";
-
+import ButtonBuy from "./Elements/ButtonBuy";
 const ProductDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>(); 
   const product: Product | undefined = products.find((p) => p.id === Number(id));
-
   const [quantity, setQuantity] = useState(1);
   const [mainImage] = useState(product ? product.image : "");
   const [isExpanded, setIsExpanded] = useState(false);
@@ -14,12 +13,7 @@ const ProductDetail: React.FC = () => {
     setIsExpanded(!isExpanded);
   };
 
-  const handleBuyNow = () => {
-    const phoneNumber = "62881082717519"; // Ganti dengan nomor WhatsApp kamu
-    const message = `Halo, saya ingin membeli ${product?.name} dengan jumlah ${quantity}.`;
-    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappLink, "_blank");
-  };
+ 
 
   if (!product) {
     return (
@@ -78,15 +72,7 @@ const ProductDetail: React.FC = () => {
         </div>
 
         {/* Tombol Aksi */}
-        <div className="flex gap-4 mt-4">
-          <button 
-            onClick={handleBuyNow}
-            className="bg-white text-green-700 font-bold border px-6 py-3 rounded-3xl w-96 hover:bg-green-700 border-green-600 hover:text-white"
-          >
-            Buy Now
-          </button>
-         
-        </div>
+       <ButtonBuy quantity={quantity} name={product.name}/>
       </div>
     </div>
   );
