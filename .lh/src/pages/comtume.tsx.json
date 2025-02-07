@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1738653926892,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1738935238073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +0,0 @@\n-import React from 'react'\r\n-\r\n-function comtume() {\r\n-  return (\r\n-    <div>\r\n-        <input type=\"text\" placeholder='email' />\r\n-        <input type=\"text\" placeholder='password' />\r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default comtume\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1738653926892,
